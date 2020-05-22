@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity implements Adapter.ItemClick
         mrecyclerview = findViewById(R.id.recyclerView);
         minput = findViewById(R.id.textinput);
         mbtnadd = findViewById(R.id.btnAdd);
-        todolist.add("Trash");
+        todolist.add("Buy Milk");
+        todolist.add("Send postage");
+        todolist.add("Buy Android development book");
 
         mrecyclerview.setLayoutManager(new LinearLayoutManager(this));
         madapter = new Adapter(this, todolist);
